@@ -14,7 +14,7 @@ type Entity struct {
 	Normalized   string  `json:normalized`
 	Type         string  `json:"type"`
 	EntityId     string  `json:"entityId"`
-	Confidence   float32 `json:"confidence"`
+	Confidence   float64 `json:"confidence"`
 }
 
 // EntitiesOutput request output.
