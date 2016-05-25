@@ -8,11 +8,13 @@ type EntitiesInput struct {
 }
 
 type Entity struct {
-	Count        int    `json:count`
-	IndocChainId int    `json:"indocChainId"`
-	Mention      string `json:mention`
-	Normalized   string `json:normalized`
-	Type         string `json:"type"`
+	Count        int     `json:count`
+	IndocChainId int     `json:"indocChainId"`
+	Mention      string  `json:mention`
+	Normalized   string  `json:normalized`
+	Type         string  `json:"type"`
+	EntityId     string  `json:"entityId"`
+	Confidence   float32 `json:"confidence"`
 }
 
 // EntitiesOutput request output.
